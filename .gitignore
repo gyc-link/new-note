@@ -7,3 +7,7 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+/.obsidian/app.json
+/.obsidian/appearance.json
+/.obsidian/*.json
+/.obsidian/plugins/obsidian-spaced-repetition
