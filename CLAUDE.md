@@ -75,8 +75,8 @@ Obsidian Spaced Repetition 支持两种：
 
 ## 文件格式
 
-- 宿主机是 Windows：所有 `.md` 保持 **CRLF** 换行，不要改成 LF；编码 UTF-8。
-- 新建或编辑 Markdown 后，确认换行符仍为 CRLF。
+- 所有 `.md` 统一使用 **UTF-8 + LF** 换行；Obsidian 保存时就是 LF，不要改成 CRLF。
+- 新建或编辑 Markdown 后，确认换行符仍是 LF。
 
 ## 提交约定
 
