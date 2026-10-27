@@ -1,0 +1,21 @@
+#flashcards
+# C# 整数除法
+
+> 来源：2026-10-27 提问式学习（C# int 的除法）
+
+`7 / 2` 和 `7.0 / 2` 的结果分别是多少？为什么不同？
+?
+`3` 和 `3.5`。`int / int` 先做整数除法、丢掉小数，再赋值；有一边是 `double` 时先转成浮点再除。
+
+C# 里 `-7 / 2` 等于多少？和 Python 的 `-7 // 2` 有什么区别？
+?
+`-3`。C# 向 0 截断（truncate toward zero）；Python 的 `//` 向下取整，得 `-4`。
+
+`int a = 5; double d = a / 2;` 之后 `d` 是多少？为什么？想得到 `2.5` 怎么改？
+?
+`d` 是 `2.0`。`a / 2` 先按 `int` 算成 `2`，再隐式转成 `double`。
+改：`(double)a / 2` 或 `a / 2.0`。
+
+`int z = 0; int x = 1 / z;` 运行会发生什么？写成 `1 / 0` 又怎样？
+?
+抛 `DivideByZeroException`。若除数是常量 0，编译期就报错 CS0020（Division by constant zero）。
